@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.4 on win32)" generated="2024-01-29T14:44:56.622149" rpa="false" schemaversion="5">
+<suite id="s1" name="QuizTest1" source="C:\Users\Asus\Desktop\AllTest\QuizTest1">
+<suite id="s1-s1" name="Quiz" source="C:\Users\Asus\Desktop\AllTest\QuizTest1\Quiz.robot">
+<test id="s1-s1-t1" name="Register with valid info" line="56">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:44:56.836769" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-29T14:44:56.836769" elapsed="1.398402"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:44:58.238175" level="INFO">Opening url 'https://automationexercise.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-01-29T14:44:58.237172" elapsed="3.493068"/>
+</kw>
+<kw name="Verify automationexercise page">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:45:01.736248" level="INFO">Page title is 'Automation Exercise'.</msg>
+<arg>${title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-01-29T14:45:01.731243" elapsed="0.005005"/>
+</kw>
+<arg>${title}</arg>
+<status status="PASS" start="2024-01-29T14:45:01.731243" elapsed="0.005996"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:45:01.738241" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[8]/a'.</msg>
+<arg>${btn_contact}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:45:01.737239" elapsed="0.993275"/>
+</kw>
+<kw name="Verify getintoch page">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:45:02.746511" level="INFO">Page title is 'Automation Exercise - Contact Us'.</msg>
+<arg>${title_contact}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-01-29T14:45:02.731513" elapsed="0.016043"/>
+</kw>
+<arg>${title_contact}</arg>
+<status status="PASS" start="2024-01-29T14:45:02.731513" elapsed="0.016043"/>
+</kw>
+<kw name="Input Name">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:45:02.749524" level="INFO">Typing text 'Pimchanok Jamrurai' into text field '//input[@name="name"]'.</msg>
+<arg>${input_Name}</arg>
+<arg>${Name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:45:02.748546" elapsed="0.200667"/>
+</kw>
+<arg>${Name}</arg>
+<status status="PASS" start="2024-01-29T14:45:02.747556" elapsed="0.201657"/>
+</kw>
+<kw name="Input Email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:45:02.952214" level="INFO">Typing text 'pmxk102@gmail.com' into text field '//input[@name="email"]'.</msg>
+<arg>${input_Email}</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:45:02.952214" elapsed="0.195991"/>
+</kw>
+<arg>${Email}</arg>
+<status status="PASS" start="2024-01-29T14:45:02.949213" elapsed="0.198992"/>
+</kw>
+<kw name="Input Subject">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:45:03.149204" level="INFO">Typing text 'Test Contact' into text field '//input[@name="subject"]'.</msg>
+<arg>${input_Subject}</arg>
+<arg>${Subject}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:45:03.149204" elapsed="0.117999"/>
+</kw>
+<arg>${Subject}</arg>
+<status status="PASS" start="2024-01-29T14:45:03.148205" elapsed="0.118998"/>
+</kw>
+<kw name="Input Message">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:45:03.268201" level="INFO">Typing text 'test contact' into text field '//*[@id="message"]'.</msg>
+<arg>${input_Message}</arg>
+<arg>${Message}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:45:03.268201" elapsed="0.080997"/>
+</kw>
+<arg>${Message}</arg>
+<status status="PASS" start="2024-01-29T14:45:03.267203" elapsed="0.082996"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:45:03.350199" level="INFO">Sending C:\Users\Asus\Desktop\AllTest\QuizTest1\test1.png to browser.</msg>
+<arg>${input_img}</arg>
+<arg>C:\\Users\\Asus\\Desktop\\AllTest\\QuizTest1${/}${img}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:45:03.350199" elapsed="0.028001"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:45:03.379198" level="INFO">Clicking element '//*[@id="contact-us-form"]/div[6]/input'.</msg>
+<arg>${btn_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:45:03.379198" elapsed="0.054939"/>
+</kw>
+<doc>Test the login functionality with valid credentials</doc>
+<status status="PASS" start="2024-01-29T14:44:56.834760" elapsed="6.600376"/>
+</test>
+<status status="PASS" start="2024-01-29T14:44:56.656152" elapsed="6.779986"/>
+</suite>
+<status status="PASS" start="2024-01-29T14:44:56.627151" elapsed="6.812987"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="QuizTest1">QuizTest1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Quiz">QuizTest1.Quiz</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

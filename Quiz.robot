@@ -60,7 +60,7 @@ Register with valid info
 
     Verify automationexercise page  ${title}
 
-    Click Element  ${btn_contact}
+    Click Button Element
 
     Verify getintoch page  ${title_contact}
 
@@ -69,4 +69,4 @@ Register with valid info
     Input Subject   ${Subject}
     Input Message   ${Message}
     Choose File     ${input_img}  ${CURDIR}${/}${img}
-    Click Element   ${btn_submit}
+    Click submit Button

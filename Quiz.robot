@@ -49,6 +49,9 @@ Input Message
 Click submit Button
     Click Element   ${btn_submit}
 
+Click Home Element 
+    Click Element  //*[@id="header"]/div/div/div/div[3]/div/ul/li[1]/a
+
 
 
 
@@ -70,3 +73,4 @@ Register with valid info
     Input Message   ${Message}
     Choose File     ${input_img}  ${CURDIR}${/}${img}
     Click submit Button
+    Click Home Element
